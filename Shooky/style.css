@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d4a88d;
+}
+.shooky {
+  position: relative;
+  /* background-color: #fff; */
+  width: 350px;
+  height: 350px;
+}
+.face {
+  position: absolute;
+  width: 220px;
+  height: 190px;
+  background-color: #be7d46;
+  border: 6px solid #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 340px 340px 260px 260px;
+}
+.l-brow {
+  position: absolute;
+  width: 43px;
+  height: 12px;
+  background-color: #000;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  top: 33px;
+  left: 53px;
+}
+.r-brow {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 10px;
+  top: 47px;
+  right: 57px;
+}
+.l-eye {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 62px;
+  left: 59px;
+}
+.r-eye {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 62px;
+  right: 59px;
+}
+.mouth {
+  height: 55px;
+  width: 65%;
+  position: absolute;
+  background-color: #6e341e;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%) skew(4deg);
+  border: 6px solid #000;
+  border-radius: 2px 2px 80px 70px;
+}
+.mouth::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 13px;
+  background-color: #fff;
+  left: 51%;
+  transform: translateX(-50%);
+  border-radius: 0 0 5px 3px;
+}
+.l-arm {
+  position: absolute;
+  width: 70px;
+  height: 38px;
+  border: 6px solid #000;
+  background-color: #6e341e;
+  top: 165px;
+  left: 36px;
+  transform: rotate(34deg);
+  border-radius: 15px;
+}
+.r-arm {
+  position: absolute;
+  width: 70px;
+  height: 38px;
+  border: 6px solid #000;
+  background-color: #6e341e;
+  top: 165px;
+  right: 36px;
+  transform: rotate(-34deg);
+  border-radius: 15px;
+}
+.l-leg {
+  position: absolute;
+  width: 42px;
+  height: 70px;
+  border: 6px solid #000;
+  background-color: #6e341e;
+  top: 225px;
+  left: 120px;
+  border-radius: 0 0 20px 11px;
+  transform: skew(-10deg, 0);
+}
+.r-leg {
+  position: absolute;
+  width: 42px;
+  height: 70px;
+  border: 6px solid #000;
+  background-color: #6e341e;
+  top: 225px;
+  right: 120px;
+  border-radius: 0 0 11px 20px;
+  transform: skew(10deg, 0);
+}
