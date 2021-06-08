@@ -127,7 +127,7 @@ body {
 }
 /* legs */
 .legs {
-  width: 120px;
+  width: 96px;
   height: 120px;
   position: absolute;
   left: 50%;
@@ -135,41 +135,79 @@ body {
   transform: translateX(-50%);
 }
 .l-leg {
-  width: 52px;
+  width: 48px;
   height: 120px;
   position: absolute;
   background-color: #949494;
   border: 4px solid #1d1501;
   top: 15px;
-  left: 10px;
-  border-radius: 0 0 16px 20px;
+  left: 0;
+  border-radius: 0 0 22px 20px;
 }
-.l-leg::after {
+.r-leg {
+  width: 48px;
+  height: 120px;
+  position: absolute;
+  background-color: #fff;
+  left: 46px;
+  border: 4px solid #1d1501;
+  top: 15px;
+  border-radius: 0 0 20px 22px;
+}
+.l-leg::before {
   content: "";
   position: absolute;
   width: 11px;
   height: 66px;
   background-color: inherit;
-  right: -2px;
+  right: -4px;
   z-index: 1;
 }
-.r-leg {
-  width: 50px;
-  height: 120px;
-  position: absolute;
-  background-color: #fff;
-  left: 58px;
-  border: 4px solid #1d1501;
-  top: 15px;
-  border-radius: 0 0 20px 16px;
-}
-.r-leg::after {
+.r-leg::before {
   content: "";
   position: absolute;
   width: 11px;
   height: 66px;
   background-color: inherit;
   left: -4px;
+}
+.l-leg .paw {
+  position: absolute;
+  width: 80%;
+  height: 26px;
+  background-color: inherit;
+  bottom: -4px;
+  left: -6px;
+  border-radius: 50%;
+  border-left: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+.r-leg .paw {
+  position: absolute;
+  width: 80%;
+  height: 26px;
+  background-color: inherit;
+  bottom: -4px;
+  right: -6px;
+  border-radius: 50%;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+.paw::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 116%;
+  background-color: inherit;
+  z-index: 1;
+  left: 2px;
+  top: -3px;
+  border-radius: 0 0 7px 10px;
+}
+.r-leg .paw::before {
+  left: unset;
+  right: 2px;
+  border-radius: 0 0 10px 7px;
 }
 /* arms */
 .l-arm {
